@@ -10,23 +10,20 @@
  
 ## Tutorial
 
-```bash
 Создаем переменные окружения GITHUB_USERNAME и GIST_TOKEN
-
+```bash
 $ export GITHUB_USERNAME=Kustov-Ilya  #cоздание переменной окружения
 $ export GIST_TOKEN=****************************************  #cоздание переменной окружения
 $ alias edit=vim #переопределение команды
 ```
 
-```bash
 Установка  gistup
-
+```bash
 $ npm install -g gistup 
 ```
 
-```bash
 Создание .gistup.json и редактирование, пока не введено "EOF"
-
+```bash
 $ cat > ~/.gistup.json <<EOF 
 {
   "token": "${GIST_TOKEN}"
@@ -34,9 +31,8 @@ $ cat > ~/.gistup.json <<EOF
 EOF #заполнение файла .gistup.json
 ```
 
-```bash
 Создание рабочего пространства
-
+```bash
 $ cd ~ #переход в основную директорию
 $ mkdir -p workspace/labs/projects/   #создание новых директорий
 $ mkdir -p workspace/labs/tasks/
@@ -45,9 +41,9 @@ $ mkdir -p workspace/labs/reports/
 
 ## Report
 
-```bash
-Добавление report на GitHub
 
+Добавление report на GitHub
+```bash
 $ cd ~/workspace/labs/ #переход в директорию workspace/labs/ 
 $ export LAB_NUMBER=02 #cоздание переменной окружения
 $ git clone https://github.com/tp-labs/lab${LAB_NUMBER} tasks/lab${LAB_NUMBER} #клонирование гитхаба
